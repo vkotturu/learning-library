@@ -1,10 +1,11 @@
-#  Get Started with Git and Set up the GitHub Environment
+# Get Started with Git and Set up the GitHub Environment
 
 ## Introduction
 
 In this lab, you will learn how to create a GitHub Account and associate it with your Oracle email account, request that your GitHub account is added to the Oracle GitHub Organization (OGHO) at [github.com/oracle](github.com/oracle), set up the GitHub development environment, and install GitHub Desktop.
 
 ### Objectives
+
 * Submit a LiveLabs workshop request using the **Oracle Workshop Management System (WMS)**.
 * Create a GitHub account and add it to the Oracle GitHub Organization.
 * Set up your GitHub environment.

@@ -42,11 +42,15 @@
             "filename": "../../install-management-agent-oca/install-management-agent-oca.md"
         },
         {
-            "title": "Lab 8: Track Java Usage in a Container",
+            "title": "Lab 8: Set up multiple Managed Instances and Management Gateway",
+            "filename": "../../multiple-managed-instances/multiple-managed-instances.md"
+        },
+        {
+            "title": "Lab 9: Track Java Usage in a Container",
             "filename": "../../track-java-usage-in-a-container/track-java-usage-in-a-container.md"
         },
         {
-            "title": "Lab 9: Set up Logrotate",
+            "title": "Lab 10: Set up Logrotate",
             "filename":"../../set-up-logrotate/set-up-logrotate.md"
 
         },
