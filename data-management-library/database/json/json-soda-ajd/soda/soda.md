@@ -21,17 +21,11 @@ In this lab, you will:
 
 ## Task 1: Perform Simple REST Operations in Oracle Cloud Shell
 
-1. A simple REST request can be done from the browser - open the Database Actions launchpad and copy the URL.
+1. In lab 3, you saved the REST and ORDS URL. It should end with */ords/*.
 
-	The URL should look similar to this:
+	In this lab, we refer *your URL* in code snippets where your URL is similar to `ppkenzghg74avsq-atp19cdb.adb.eu-frankfurt-1.oraclecloudapps.com`. Replace *your URL* with the part of your URL before *ords/* in all the code snippets wherever mentioned.
 
-	```
-	https://ppkenzghg74avsq-atp19cdb.adb.eu-frankfurt-1.oraclecloudapps.com/ords/admin/_sdw
-	```
-
-	*Note* - In this lab, we refer *your URL* in code snippets where your URL is similar to `ppkenzghg74avsq-atp19cdb.adb.eu-frankfurt-1.oraclecloudapps.com`. Replace *your URL* with your URL in all the code snippets wherever mentioned.
-
-2. In the URL, remove the part - *_sdw* and replace it with *soda/latest*.
+2. First, take your full REST URL and append */admin/soda/latest*.
 
 	```
 	https://<your URL>/ords/admin/soda/latest/

@@ -6,7 +6,7 @@ Oracle is a relational database, meaning it typically stores data in rows and co
 
 In order to create a collection all you have to specify is the collection's name. Unlike a relational table you do not have to provide any schema information. So, lets create a collection for the products we want to sell in the store.
 
-Estimated Time: 20 minutes
+Estimated Time: 15 minutes
 
 ### Objectives
 
@@ -384,8 +384,6 @@ In this task we will use the Oracle Database API for MongoDB. That allows standa
 
 	```
 	<copy>
-	curl -s https://objectstorage.us-ashburn-1.oraclecloud.com/n/idaqt8axawdx/b/products/o/products.ndjson | \
-    mongoimport --collection products --uri $URI
 	wget https://downloads.mongodb.com/compass/mongosh-1.3.1-linux-x64.tgz
 	tar -xvf mongosh-1.3.1-linux-x64.tgz
 	export PATH="`pwd`/mongosh-1.3.1-linux-x64/bin/:$PATH"
