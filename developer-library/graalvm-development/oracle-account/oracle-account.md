@@ -96,5 +96,5 @@ Oracleアカウントは以下二つのステップで作成できます。
 ## Acknowledgements
 
 - **Created By/Date** - Jun Suzuki, Java Global Business Unit, April 2022
-- **Contributors** - 
-- **Last Updated By/Date** - Jun Suzuki, April 2022
+- **Contributors** - James Connors, Madhusudhan Rao, David Start 
+- **Last Updated By/Date** - Jun Suzuki, May 2022
