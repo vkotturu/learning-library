@@ -65,9 +65,10 @@ Click in **View Account** and **Sign in to Cloud**.
         ```
         <copy>WORKSHOPADWOAC</copy>
         ```
-    
-    - **Description**: &lt;optional&gt;
-    
+    - **Description**: &lt;Optional&gt;
+        ```
+        <copy>Analytics Instance for the cloud</copy>
+        ```
     - **Feature Set**: Enterprise Analytics (important)
     
     - **Capacity**: 1 - Non Production
@@ -76,7 +77,7 @@ Click in **View Account** and **Sign in to Cloud**.
 
 4. Select **Create**.
 
-    ![OAC Instance Creation](./images/oac-creation-details.png)
+    ![OAC Instance Creation](./images/oac-creation-details-new.png)
 
 5. On the **Confirmation** screen, select **Create**.
 

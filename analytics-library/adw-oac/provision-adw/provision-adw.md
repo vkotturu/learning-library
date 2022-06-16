@@ -79,16 +79,15 @@ Estimated Lab Time: 15 minutes.
     
     - **CPU Count:** 1
     
-    - **Storage Capacity (TB):** 0.02
-        ```
-        <copy>0.02</copy>
-        ```
+    - **Storage Capacity (TB):** 1
 
     - **CPU Count and Storage Capacity (TB)** are defined by default for the Always Free Tier.
     
-    - **Auto scaling:** Off
+    - **OCPU Auto scaling:** Off
+    
+    - **Storage Auto scaling:** Off
 
-    ![ADB Creation Storage](./images/adw-db-version.png)
+    ![ADB Creation Storage](./images/adw-db-version-new.png)
 
 3. Under **Create administration credentials** section:
 
@@ -98,11 +97,9 @@ Estimated Lab Time: 15 minutes.
 
     Under **Choose network access** section:
 
-    - Select **'Allow secure access from everywhere'**: *On*
+    - Select **'Secure access from everywhere'**: *On*
     
-    - Select **Configure access control rules:** *Off*
-
-    ![ADB Creation Password](./images/adw-db-password.png)
+    ![ADB Creation Password](./images/adw-db-password-new.png)
 
 4. Under **Choose a license type** section, choose **License Type: Licence Included**.
 
