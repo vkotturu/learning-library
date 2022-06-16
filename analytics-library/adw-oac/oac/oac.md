@@ -144,21 +144,19 @@ existing projects.
     ![OAC - Sales Add](./images/oac-sales-canvas-edit.png)
 
 
-6. All the number-type columns from this table are treated as **NUMBER** by default. You can check the information on the **Properties** section of each table column under the Data Type section.
+6. All the number-type columns from this table are treated as **MEASURE** by default. You can check the information on the **Properties** section of each table column under the Data Type section.
 
     Confirm that:
-    - **AMOUNT&#95;SOLD**
+    - **PROD&#95;ID**
     - **CHANNEL&#95;ID**
-    - **CUST&#95;ID** 
+    - **PROMO&#95;ID** 
     
-    have **Data Type** are **Number** and **Treat As** are **Attibute**.
+    have **Data Type** are **Number** and **Treat As** are **ATTRIBUTE**. 
 
-    For reviewing or/and making changes of these fields, select one field at the time and change the information on the **Properties** section of each table column under the Data Type section.
+    For reviewing or/and making changes of these fields, select one field at the time and change **MEASURE** to **ATTRIBUTE** the information on the **Properties** section of each table column under the Data Type section.
     
-    ![SH-SALES AMOUNT&#95;SOLD Properties Measure](./images/amount-sold-measure.png)
     ![SH-SALES CHANNEL&#95;ID Properties Measure](./images/channel-id-measure.png)
-    ![SH-SALES CUST&#95;ID Properties Measure](./images/cust-id-measure.png)
-
+    
 7. We need to make a few more **modifications** on the table fields before we built the visualizations. 
     
     This time we will change the **Aggregation rule** to **CUST&#95;ID** from **SUM** to **Count Distinct** from the COLUMNS Properties panel from the left bottom.
@@ -220,7 +218,7 @@ existing projects.
 
     - **Canvas**: Your play area. You can place your visuals here. You can also create more Canvases and copy/move visuals around
 
-2. Select **AMOUNT&#95;SOLD** column from the **TABLE panel** and add **Aggregation** rule **SUM** from the COLUMNS detail **panel from the bottom**. By default **Aggregation** value, will be **SUM**.
+2. Select **AMOUNT&#95;SOLD** column from the **TABLE panel** and check if **Aggregation** rule is **SUM** from the COLUMNS detail **panel from the bottom**. By default **Aggregation** value, should be **SUM** but we just want to be sure.
 
     ![SH-SALES Aggregation](./images/sh-sales-aggreation.png)
 
