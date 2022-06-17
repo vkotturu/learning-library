@@ -66,10 +66,10 @@ Quick walk through on how to deploy the microservices on your Kubernetes cluster
     This will bring you to shell prompt
 
 
-4. Run the following curl command in the shell prompt to issue a `placeOrder` request to the GrabDish application.
+4. Run the following curl command in the shell prompt to issue a `placeOrder` request to the GrabDish application replace `[REPLACE_WITH_PASSWORD]` as appropriate.
 
     ```
-    <copy>curl -u grabdish:Welcome12345 -X POST -H "Content-type: application/json" -d  "{\"serviceName\" : \"order\" , \"commandName\" : \"placeOrder\", \"orderId\" : \"66\", \"orderItem\" : \"sushi\",  \"deliverTo\" : \"101\"}"  "http://frontend.msdataworkshop:8080/placeorder"</copy>
+    <copy>curl -u grabdish:[REPLACE_WITH_PASSWORD] -X POST -H "Content-type: application/json" -d  "{\"serviceName\" : \"order\" , \"commandName\" : \"placeOrder\", \"orderId\" : \"66\", \"orderItem\" : \"sushi\",  \"deliverTo\" : \"101\"}"  "http://frontend.msdataworkshop:8080/placeorder"</copy>
     ```
 
    and verify the output
@@ -81,7 +81,7 @@ Quick walk through on how to deploy the microservices on your Kubernetes cluster
 5. Run the following curl command in the shell prompt to issue a `showOrder` request to the GrabDish application.
 
     ```
-    <copy>curl -u grabdish:Welcome12345 -X POST -H "Content-type: application/json" -d  "{\"serviceName\" : \"order\" , \"commandName\" : \"showorder\", \"orderId\" : \"66\", \"orderItem\" : \"\",  \"deliverTo\" : \"\"}"  "http://frontend.msdataworkshop:8080/command"</copy>
+    <copy>curl -u grabdish:[REPLACE_WITH_PASSWORD] -X POST -H "Content-type: application/json" -d  "{\"serviceName\" : \"order\" , \"commandName\" : \"showorder\", \"orderId\" : \"66\", \"orderItem\" : \"\",  \"deliverTo\" : \"\"}"  "http://frontend.msdataworkshop:8080/command"</copy>
     ```
 
    and verify the output
