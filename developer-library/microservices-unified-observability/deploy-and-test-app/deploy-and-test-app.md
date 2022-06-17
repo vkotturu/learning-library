@@ -59,7 +59,7 @@ Quick walk through on how to deploy the microservices on your Kubernetes cluster
 5. Run the following curl command in the shell prompt to issue a `showOrder` request to the GrabDish application.
 
     ```
-    <copy>curl -u grabdish:[REPLACE_WITH_PASSWORD] -X POST -H "Content-type: application/json" -d  "{\"serviceName\" : \"order\" , \"commandName\" : \"showorder\", \"orderId\" : \"66\", \"orderItem\" : \"\",  \"deliverTo\" : \"\"}"  "http://frontend.msdataworkshop:8080/command"</copy>
+    <copy>curl -u grabdish:[REPLACE_WITH_PASSWORD] -X POST -H "Content-type: application/json" -d  "{\"serviceName\" : \"order\" , \"commandName\" : \"showorder\", \"orderId\" : \"1\", \"orderItem\" : \"\",  \"deliverTo\" : \"\"}"  "http://frontend.msdataworkshop:8080/command"</copy>
     ```
 
    and verify the output
