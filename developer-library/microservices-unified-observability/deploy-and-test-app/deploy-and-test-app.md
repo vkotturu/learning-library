@@ -36,7 +36,7 @@ Quick walk through on how to deploy the microservices on your Kubernetes cluster
     <copy>kubectl get pods --all-namespaces</copy>
     ```
 
-## Task 3: Deploy microservices and access application via NodePort and curl
+## Task 2: Deploy microservices and access application 
 
 1.  Run the deploy script. This will create the deployment, services, etc. for all microservices in the kubernetes cluster `msdataworkshop` namespace:
 
