@@ -22,7 +22,7 @@ Quick walk through on how to deploy the microservices on your Kubernetes cluster
 
 ## Task 1: Deploy microservices and access application 
 
-1.  Run the deploy script. This will create the deployment, services, etc. for all microservices in the kubernetes cluster `msdataworkshop` namespace:
+1.  Run the deploy script. This will create the deployment, services, etc. for all microservices in the Kubernetes cluster's `msdataworkshop` namespace:
 
     ```
     <copy>cd $GRABDISH_HOME;./deploy-noLB.sh</copy>
