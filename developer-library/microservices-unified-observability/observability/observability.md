@@ -44,7 +44,7 @@ You will see some warning messages related to versions, etc. that may safely be 
     <copy>cd $GRABDISH_HOME/observability;./createMonitorsAndExporters.sh</copy>
     ```
 
-You will see some warning messages related to configmaps not existing as this is the initial setup that may safely be ignored.
+You will see some warning messages related to configmaps not existing, as this is the initial setup, that may safely be ignored.
 
 ## Task 2: Configure Grafana
 
@@ -74,7 +74,7 @@ You will see some warning messages related to configmaps not existing as this is
 
       ![Configuration](images/configurationdatasourcesidemenu.png " ")
 
-    Click `select` button of Prometheus option.
+    Click the Prometheus option.
 
       ![Select](images/selectprometheusdatasource.png " ")
 
@@ -94,7 +94,7 @@ You will see some warning messages related to configmaps not existing as this is
 
       ![Add data source](images/adddatasourcebutton.png " ")
 
-    Click `select` button of Jaeger option.
+    Click the Jaeger option.
 
       ![Select Jaeger](images/addjaegerdatasource.png " ")
 
@@ -210,16 +210,19 @@ You will see some warning messages related to configmaps not existing as this is
     - Metrics about the kubernetes microservice specific to that microservice (`PlaceOrder Count`, etc.)
     - Metrics about the PDB used by the microservice (open sessions, etc.)
     - Metrics about the PDB specific to that microservice (inventory count)
-
       ![Frontend Dashboard](images/frontenddashscreen.png " ")
       ![Order Dashboard](images/orderdashscreen.png " ")
       ![Inventory Dashboard](images/inventorydashscreen.png " ")
 
-4. If not already done, place an order using the application or run the scaling test in the earlier labs to see the metric activity in the dashboard.
+   * Note that you may need to click the metric description(s) at the bottom of a panel in order to see them represented on the graph.
+     ![Frontend Dashboard](images/selectmetricdescr.png " ")
+   
+4. If not already done, place an order using the curl command in `curlpod` as described in Task 1, steps 3 and 4, of the previous `Deploy and Test Data-centric Microservices Application` lab.
 
 5. Select the 'Explore' option from the drop-down menu of any panel to show that metric and time-span on the Explore screen
 
       ![Grabdish Explore](images/grabdishdashexplorebutton.png " ")
+      ![Grabdish Explore](images/dropdownexplore.png " ")
 
 ## Task 4: Use Grafana to Drill Down on Metrics, Tracing, and Log Correlation and Logs to Trace Feature
 
@@ -247,7 +250,7 @@ You will see some warning messages related to configmaps not existing as this is
 
 ## Task 5: Install and Study the AQ/TEQ Dashboard Screen and Metrics
 
-1. Install the GrabDish Dashboard
+1. Install the AQ/TEQ ("AQ Monitor") Dashboard
 
    Select the `+` icon on the left-hand side and select `Import`
 
