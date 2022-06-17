@@ -4,6 +4,8 @@
 
 This lab will show you how to set up alerts for metrics conditions and trigger them so that Slack notifications are sent as appropriate.
 
+![Place Order Panel](images/alertrulerelationship.png " ")
+
 Estimated Time:  10 minutes
 
 ### Objectives

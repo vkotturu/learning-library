@@ -82,6 +82,11 @@ Estimated Time:  5 minutes
      
      ![Test Alert](images/testalertinslack.png " ")
 
+3. Set Slack as default contact point
+
+   On the main `Alerting` page, select the `Notification polices` tab, select `Slack contact point` in the  `Default contact point` drop down list, and click `Save` button.
+
+   ![Test Alert](images/notificationpolicies.png " ")
     
 You may now **proceed to the next lab.**.
 
