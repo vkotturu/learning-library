@@ -28,23 +28,7 @@ Quick walk through on how to deploy the microservices on your Kubernetes cluster
     <copy>cd $GRABDISH_HOME;./deploy-noLB.sh</copy>
     ```
 
-![Deploy All](images/deploy-all.png " ")
-
-2.  Once successfully created, check that the services are running:
-
-    ```
-    <copy>kubectl get pods --all-namespaces</copy>
-    ```
-
-## Task 2: Deploy microservices and access application 
-
-1.  Run the deploy script. This will create the deployment, services, etc. for all microservices in the kubernetes cluster `msdataworkshop` namespace:
-
-    ```
-    <copy>cd $GRABDISH_HOME;./deploy.sh</copy>
-    ```
-
-![Deploy All](images/deploy-all.png " ")
+   ![Deploy All](images/deploy-all.png " ")
 
 2. Once successfully created, check that the services are running:
 
