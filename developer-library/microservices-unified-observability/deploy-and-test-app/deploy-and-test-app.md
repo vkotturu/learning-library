@@ -20,19 +20,84 @@ Quick walk through on how to deploy the microservices on your Kubernetes cluster
 * An Oracle Cloud paid account or free trial. To sign up for a trial account with $300 in credits for 30 days, click [Sign Up](http://oracle.com/cloud/free).
 * The OKE cluster and the Autonomous Transaction Processing databases that you created in Lab 1
 
-## Task 1: Deploy all the microservices, including the FrontEnd for access either via LoadBalancer or NodePort
+## Task 1: Determine whether to access the Grabdish application from within Kubernetes cluster using NodePort or via LoadBalancer and public IP.
+ 
+ If you are taking this workshop using a Free Trial tenancy, follow the instructions of `Task 2: Deploy microservices and access application via NodePort and curl` (and do not follow the `Task 3` instructions). This workshop simply uses the application for monitoring and so the GUI is not necessary.
+
+ If you are using your own tenancy or a LiveLabs environment with sufficient LoadBalancer and IP quota and wish to access the Grabdish application GUI you may instead follow the instructions of `Task 3: Deploy microservices and access application via public IP LoadBalancer and GUI`.
+
+## Task 2: Deploy microservices and access application via NodePort and curl
+
+1.  Run the deploy script. This will create the deployment, services, etc. for all microservices in the kubernetes cluster `msdataworkshop` namespace:
+
+    ```
+    <copy>cd $GRABDISH_HOME;./deploy-noLB.sh</copy>
+    ```
+
+![Deploy All](images/deploy-all.png " ")
+
+2.  Once successfully created, check that the services are running:
+
+    ```
+    <copy>kubectl get pods --all-namespaces</copy>
+    ```
+
+## Task 3: Deploy microservices and access application via NodePort and curl
+
+1.  Run the deploy script. This will create the deployment, services, etc. for all microservices in the kubernetes cluster `msdataworkshop` namespace:
+
+    ```
+    <copy>cd $GRABDISH_HOME;./deploy.sh</copy>
+    ```
+
+![Deploy All](images/deploy-all.png " ")
+
+2. Once successfully created, check that the services are running:
+
+    ```
+    <copy>kubectl get pods --all-namespaces</copy>
+    ```
+3. Run the `curlpod` shortcut command to start a pod containing `curl`, etc. utilities.
+
+    ```
+    <copy>curlpod</copy>
+    ```
+    
+    This will bring you to shell prompt
 
 
+4. Run the following curl command in the shell prompt to issue a `placeOrder` request to the GrabDish application.
 
-## Task 2: Deploy all the microservices, including the FrontEnd for access via NodePort
+    ```
+    <copy>curl -u grabdish:Welcome12345 -X POST -H "Content-type: application/json" -d  "{\"serviceName\" : \"order\" , \"commandName\" : \"placeOrder\", \"orderId\" : \"66\", \"orderItem\" : \"sushi\",  \"deliverTo\" : \"101\"}"  "http://frontend.msdataworkshop:8080/placeorder"</copy>
+    ```
 
+   and verify the output
 
-## Task 3: Deploy all the microservices, including the FrontEnd for access via LoadBalancer 
+    `
+    {"orderid":"66","itemid":"sushi","deliverylocation":"101","status":"pending","inventoryLocation":"","suggestiveSale":""}
+    `
+
+5. Run the following curl command in the shell prompt to issue a `showOrder` request to the GrabDish application.
+
+    ```
+    <copy>curl -u grabdish:Welcome12345 -X POST -H "Content-type: application/json" -d  "{\"serviceName\" : \"order\" , \"commandName\" : \"showorder\", \"orderId\" : \"66\", \"orderItem\" : \"\",  \"deliverTo\" : \"\"}"  "http://frontend.msdataworkshop:8080/command"</copy>
+    ```
+
+   and verify the output
+
+    `
+    {"orderid":"66","itemid":"sushi","deliverylocation":"101","status":"failed inventory does not exist","inventoryLocation":"","suggestiveSale":""}
+    `
+
+You may now **proceed to the next lab.**.
+
+## Task 3: Deploy microservices and access application via public IP LoadBalancer and GUI
 
 1.  Run the deploy script. This will create the deployment and pod for all the java images in the OKE cluster `msdataworkshop` namespace:
 
     ```
-    <copy>cd $GRABDISH_HOME;./deploy.sh</copy>
+    <copy>cd $GRABDISH_HOME;./deploy-noLB.sh</copy>
     ```
 
    ![Deploy All](images/deploy-all.png " ")

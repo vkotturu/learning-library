@@ -54,37 +54,33 @@ Estimated Time:  5 minutes
      ![Copy Webhook URL](images/copythewebhookurl.png " ")
      
 
-## Task 2: Configure Alert Channel for Slack notifications
+## Task 2: Configure Contact Points for Slack notifications
 
-1. Add a Slack Notification channel in Grafana and configure it with the webhook URL.
+1. Add a Slack Notification Contact Point in Grafana and configure it with the webhook URL.
 
-   Select the alarm bell icon on the left-hand side of Grafana and select `Notification channels` under the `Alerting` menu.
+   Select the alarm bell icon on the left-hand side of Grafana and select `Contact points` under the `Alerting` menu.
 
-     ![Notification Channels](images/alerting-notificationchannels.png " ")
+     ![Contact Points](images/contactpoints.png " ")
 
-   Click `Add Channel`
+   Click `New contact point`
 
-     ![Click Add Channel](images/clickaddchannel.png " ")
+     ![Click Add Contact Point](images/newcontactpoint.png " ")
      
    Name the channel, select `Slack` from the dropdown 
    
-     ![New Alert Channel](images/newslackalertchannel.png " ")
+     ![New Contact Point](images/contactpointtypeslack.png " ")
      
-   Select `Optional Slack Settings` and then select `Every Channel Member` from the `Mention Channel` dropdown, and paste the Webhook URL in the appropriate textfield. 
+   Paste the Webhook URL in the appropriate textfield. 
    
-     ![Channel Options](images/optionalslackchannelsettings.png " ")
-     
-   Under `Notification Settings` select `Default` checkbox and click the `Save` button
-   
-     ![Default Checkbox](images/defaultcheckbox.png " ")
+     ![Enter WebHook](images/webhookurlinslack.png " ")
 
-2. Test Slack alert channel.
+   Save Contact Point.
 
-      Click the `Test` button and notice `Test notification sent` message in Grafana and the notification message sent to Slack.
-      
-     ![Select Test](images/selecttest.png " ")
+2. Test Slack contact point
+
+      Click `Send test notification` button and notice test notification sent to Slack.
      
-     ![Test Alert](images/slacktestalert.png " ")
+     ![Test Alert](images/testalertinslack.png " ")
 
     
 You may now **proceed to the next lab.**.

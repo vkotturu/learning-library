@@ -23,15 +23,29 @@ Estimated Time:  10 minutes
 
     ![Place Order Panel](images/placeorderpanel.png " ")
    
-2. Select the `alert` tab and click the `create Alert` button
+2. Select the `alert` tab and click the `Create alert rule from this panel` button
 
-    ![Create Alert](images/createalertbutton.png " ")
+    ![Create Alert](images/creatalertrulefromthispanel.png " ")
        
-3. Set the rule to evaluate every 1m for 5m, add a condition for avg() time above `.01`, and provide a message to be sent for the Slack notification (Slack channel should be the default for `Send to`)
+3. Enter the rule type fields as shown below.
 
-    ![Add Alert Rule](images/addalertruleforplaceorder.png " ")
+    ![Add Alert Rule](images/ruletype.png " ")
        
-3. You can click `Test rule` to verify the rule and then click `Apply` in the upper right corner.
+4. `Create a query to be alerted on` entering the fields as shown below and click `Run queries` button.
+
+    ![Add Alert Rule](images/createquery.png " ")
+
+   #### Different environments may have different response times and so it may be necessary to tweak the rules, etc. accordingly to trigger an alert.
+   #### Notice the current average placeOrder response time and adjust the rule's `is above` value if necessary such it is greater than the (green) average response time.
+
+   If there is no current average response time (ie green line), even after clicking the icon underneath the graph, re-run a (curl) request to placeOrder as was done in the `Deploy and Test Data-centric Microservices Application` lab.
+
+
+6. You can click `Test rule` to verify the rule and then click `Apply` in the upper right corner.
+
+    ![Test Rule](images/testrule.png " ")
+       
+7. You can click `Test rule` to verify the rule and then click `Apply` in the upper right corner.
 
     ![Test Rule](images/testrule.png " ")
 
