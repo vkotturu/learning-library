@@ -165,7 +165,9 @@ In this lab, you will:
 
     ![Database instance homepage.](./images/provisioning.png " ")
 
-## Task 3: Find the MongoDB API Connection URL
+## Task 3: Find REST and MongoDB API Connection URLs
+
+These will be needed in later labs.
 
 1. Open Database Actions
 
@@ -188,6 +190,16 @@ In this lab, you will:
     Copy the first one (containing port number 27017) and save it with a text editor for later use in lab 3. Close the pop-up window when done.
 
     ![Copy MongoDB API URL](./images/mongodb-url.png " ")
+
+4. Also under **Related Services**, you'll see a card for __RESTFUL SERVICES AND SODA__. Click on that card.
+
+    ![Card for REST](!/images/rest-card.png " ")
+
+5. Save the URL for RESTful Services and SODA in your text editor. Close the pop-up windows when done.
+
+    ![Copy REST URL](./images/rest-url.png " ")
+
+
 
 ## Task 4: Connect to your Autonomous Database using "JSON Workshop" UI
 
