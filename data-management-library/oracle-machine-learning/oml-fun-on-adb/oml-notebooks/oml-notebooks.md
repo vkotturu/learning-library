@@ -41,7 +41,7 @@ A notebook is a web-based interface for data analysis, data discovery, data visu
 
 3. On your Oracle Autonomous Database instance page, click **Database Actions**. The Launch DB Actions dialog opens. Wait till the Database Actions opens.
 
-	![ADW Service Console](images/database_actions.png)
+	![ADW Service Console](images/database-actions.png)
 
 4. On the Database Actions page, go to the Development section and click **Oracle Machine Learning**. This opens the Oracle Machine Learning sign in page.
 

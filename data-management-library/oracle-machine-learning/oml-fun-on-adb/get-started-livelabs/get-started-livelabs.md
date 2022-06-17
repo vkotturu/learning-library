@@ -96,7 +96,7 @@ To create a user account:
 
 3. On the Autonomous Database Details page, click **Database Actions**.
 
-	![Oracle Autonomous Data Warehouse](images/database_actions.png)
+	![Oracle Autonomous Data Warehouse](images/database-actions.png)
 
 4. The Oracle Database Actions Launchpad page opens in a separate tab. Scroll down to the Administration section and click **DATABASE USERS**.
 
