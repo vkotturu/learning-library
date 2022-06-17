@@ -208,10 +208,6 @@ You will see some warning messages related to configmaps not existing as this is
 3. Notice the collapsible panels for each microservices and their content which includes
     - Metrics about the kubernetes microservice runtime (CPU load, etc.)
     - Metrics about the kubernetes microservice specific to that microservice (`PlaceOrder Count`, etc.)
-  
-    Again, please see the  [Unified Observability in Grafana with converged Oracle Database Workshop](http://bit.ly/unifiedobservability) 
-for an more in-depth look at this topic including details of the metrics, logs, and tracing exporters, including info for panels with...
-
     - Metrics about the PDB used by the microservice (open sessions, etc.)
     - Metrics about the PDB specific to that microservice (inventory count)
 
@@ -248,6 +244,34 @@ for an more in-depth look at this topic including details of the metrics, logs, 
 
 7. Click the `Jaeger` to view the corresponding trace information and drill down into detail.
       ![Jaeger trace](images/traceinfo.png " ")
+
+## Task 5: Install and Study the AQ/TEQ Dashboard Screen and Metrics
+
+1. Install the GrabDish Dashboard
+
+   Select the `+` icon on the left-hand side and select `Import`
+
+   ![Import](images/importsidemenu.png " ")
+
+   Copy the contents of the [AQ/TEQ Dashboard JSON](https://raw.githubusercontent.com/oracle/microservices-datadriven/main/grabdish/observability/dashboards/aq-dashboard-basics.json)
+
+   Paste the contents in the `Import via panel json` text field and click the `Load` button, followed by `Import`
+   ![Import via panel json](images/jsondashboardupload.png " ")
+
+3. Select the four squares icon on the left-hand side and select 'Dashboards'
+   ![Dashboard side menu](images/dashboardsidemenu.png " ")
+
+4. In the `Dashboards` panel select `AQ Monitor`
+
+   ![Dashboard list](images/dashboardlistwithaqdashboard.png " ")
+
+5. Notice the collapsible panels for each microservices and their content which includes metrics about
+   - Order and Inventory Queues/Topics propagated across the Order and Inventory PDBs
+   - Subscribers
+   - Message counts, latency, etc.
+   - Enqueue and Dequeue rates
+
+   ![Frontend Dashboard](images/aqteqdash.png " ")
 
 You may now proceed to the next lab.
 
