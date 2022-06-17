@@ -43,11 +43,13 @@ Estimated Time:  15 minutes
    ```
    You will notice the related configmap is updated and the deployment is reapplied such that they can be observed in the dashboard, etc.
 
-## Task 3: Modify application tracing
+## Task 3: Application tracing
 
-1. Study the tracing behavior in `$GRABDISH_HOME/order-helidon/src/main/java/io/helidon/data/examples/OrderResource.java` and `OrderServiceEventProducer.java`
+1. There will soon be an Oracle OpenTelemetry javaagent that you can use to attach to your applications to enabled end-to-end tracing from the application into the database without making code modifications.  Until that time, and if additional application tracing is desired, you can following the following instructions for Helidon microservices and similar for Spring Boot and other frameworks.
 
-2. Notice the `@Traced` MicroProfile annotation for automatically adding tracing spans for this method call.
+2. Study the tracing behavior in `$GRABDISH_HOME/order-helidon/src/main/java/io/helidon/data/examples/OrderResource.java` and `OrderServiceEventProducer.java`
+
+3. Notice the `@Traced` MicroProfile annotation for automatically adding tracing spans for this method call.
 
     ![Annotation Trace](./images/annotationtrace.png " ")
 
@@ -57,7 +59,7 @@ Estimated Time:  15 minutes
     ![Programmatic Span](./images/programmaticspan.png " ")
 
 
-4. Notice how the OpenTracing id is set as the ECID for end to end tracing across app/Kubernetes tier and database tier.
+4. Notice how the OpenTracing id is set as the ECID for end-to-end tracing across app/Kubernetes tier and database tier.
 
     ![OpenTracing Id](./images/opentracingidsetasecid.png " ")
 
