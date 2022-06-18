@@ -89,7 +89,7 @@ Estimated Time:  10 minutes
  <copy>while true; do curl -u grabdish:[REPLACE_WITH_PASSWORD] -X POST -H "Content-type: application/json" -d  "{\"serviceName\" : \"order\" , \"commandName\" : \"placeOrder\", \"orderId\" : \"66\", \"orderItem\" : \"sushi\",  \"deliverTo\" : \"101\"}"  "http://frontend.msdataworkshop:8080/placeorderautoincrement"; sleep 2; done &</copy>
  ```
 
-## Task 4: Stop load test. Notice return to healthy state and Slack message sent indicating response time is acceptable.
+## Task 3: Stop load test. Notice return to healthy state and Slack message sent indicating response time is acceptable.
 
 1. Delete `curlpod` with the following shortcut command to insure all load test threads are terminated.
 
